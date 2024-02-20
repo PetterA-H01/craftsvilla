@@ -2,6 +2,8 @@
 
 ### Project for [kodehode](https://jobloop.no/kodehode-modellen) with the following task:
 
+### [Design file we made](https://www.figma.com/file/Zk2PdnNVbOKY62GXN1rDsn/CRAFTSVILLA?type=design&node-id=0%3A1&mode=design&t=82dcUVVsdPPK7WCP-1)
+
 #### Description: 
 An engaging and visually appealing homepage that introduces CRAFTSVILLA's mission. It should have few images of the craft artworks, workshops available, and a brief overview of the business.  
 
