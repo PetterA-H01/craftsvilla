@@ -28,3 +28,21 @@ Examples:
     - Brushes
 Many more art forms will be introduced in future (small info to customers).
 
+#### Pages:
+
+Home Page: 
+- Nav bar ( logo, menu items)
+- Header Image which showcases the Craftsvilla. 
+- Description about the Craftsvilla.
+- Menu card  of Artforms, price, Kits provided with them. See the above description examples.
+
+Gallery: 
+- Add a few images of the artforms done by the customers who visited the Craftsvilla. 
+
+Feedback:
+- A dedicated page for customers to share their experiences and feedback.
+- This will help you gather valuable insights and testimonials to build trust and improve your services.
+`Hint: Create a feedback form (the form doesn't need to be functional) and below that add a few reviews from previous customers (who they came with, what art they choose, their experience).`
+
+Booking:
+- Make a form to login, an artform they are looking for,  display opening timings and address.
