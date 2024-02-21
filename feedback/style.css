@@ -353,20 +353,32 @@ textarea {
 
 @media screen and (max-width: 1000px) {
   main {
-
     padding: 0 2rem 0 2rem;
   }
 
   nav {
     flex-direction: column;
+    width: 311px;
   }
 
   .branding {
-    margin-bottom: 20px;
+      margin: 0 auto 20px 32px;
   }
 
   .nav-links {
-    margin: 0;
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+  }
+
+  .nav-links a {
+      background-color: var(--secondary-button);
+      border-radius: 8px;
+      width: 100%;
+      margin: 0 8px 0 8px;
+      text-align: center;
   }
 
   .nav-name {
