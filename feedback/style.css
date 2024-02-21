@@ -157,8 +157,8 @@ nav {
 .heading {
   font-size: 56px;
   margin: 9.1875rem 0 1.3125rem 0;
-  padding-left: 176px;
-  text-align: left;
+  padding-right: 176px;
+  text-align: center;
   width: 100%;
   filter: drop-shadow(4px 4px 11.3px #5C5C5C);
 }
@@ -343,6 +343,12 @@ textarea {
 .book:hover,
 .submit-button:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
