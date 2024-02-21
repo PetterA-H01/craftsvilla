@@ -70,3 +70,12 @@ h6 {
 
 
 /* All above this is css reset */
+
+:root {
+    --background: #1E0B16;
+    --accent: #F133A5;
+    --text: #1EFDEE8;
+    --secondary: #270F19;
+    --primary-button: #E595C5;
+    --secondary-button: #8F155E;
+}
