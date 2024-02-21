@@ -4,14 +4,14 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*
   2. Remove default margin
 */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /*
@@ -20,8 +20,8 @@
   4. Improve text rendering
 */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -32,8 +32,8 @@ picture,
 video,
 canvas,
 svg {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /*
@@ -43,7 +43,7 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /*
@@ -56,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-    overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*
@@ -64,7 +64,18 @@ h6 {
 */
 #root,
 #__next {
-    isolation: isolate;
+  isolation: isolate;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  font: inherit;
+  border-radius: 0;
+  appearance: none;
 }
 
 
@@ -72,18 +83,234 @@ h6 {
 /* All above this is css reset */
 
 :root {
-    --background: #1E0B16;
-    --accent: #F133A5;
-    --text: #1EFDEE8;
-    --secondary: #270F19;
-    --primary-button: #E595C5;
-    --secondary-button: #8F155E;
+  --background: #1E0B16;
+  --accent: #F133A5;
+  --text: #EFDEE8;
+  --secondary: #270F19;
+  --primary-button: #E595C5;
+  --secondary-button: #8F155E;
 }
 
 
 
 body {
-    background-color: var(--background);
-    width: 100vw;
-    height: 100vh;
+  background-color: var(--background);
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  /* padding: 0 104pt 0 104pt; */
+  padding: 0 8.5rem 0 8.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.0625rem;
+}
+
+.nav-name {
+  font-size: 24px;
+  margin-left: 2rem;
+  font-weight: 600;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.feedback {
+  margin-left: 2.6875rem;
+}
+
+.booking {
+  margin-left: 3.5rem;
+}
+
+.heading {
+  font-size: 56px;
+  margin: 9.1875rem 0 1.3125rem 0;
+  padding-left: 176px;
+  text-align: left;
+  width: 100%;
+  filter: drop-shadow(4px 4px 11.3px #5C5C5C);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.card {
+  width: 296px;
+  height: 296px;
+  border-radius: 13px;
+  padding: 1.9375rem 2.5rem 2.5rem 2.9375rem;
+  color: var(--background);
+}
+
+.card h4,
+.card-xl h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+}
+
+.card p,
+.card-xl p {
+  width: 12.625rem;
+  height: 8.875rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0.8125;
+}
+
+
+.card-xl p {
+  width: 33.625rem;
+}
+
+.card h5,
+.card-xl h5 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin-top: 0.875rem;
+}
+
+.card-xl {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  width: 632px;
+  border-radius: 13px;
+  padding: 1.9375rem 2.9375rem 2.5rem 2.9375rem;
+  color: var(--background);
+}
+
+.card-1 {
+  background-color: #E595C5;
+}
+
+.card-2 {
+  background-color: #EB755B;
+}
+
+.card-3 {
+  background-color: #EB5B5B;
+}
+
+.card-4 {
+  background-color: #EB8E5B;
+}
+
+.card-5 {
+  background-color: #EBAAAA;
+}
+
+.book {
+  margin-top: 4.8125rem;
+  height: 8rem;
+  width: 30.5rem;
+  background-color: var(--secondary-button);
+  text-align: center;
+  color: var(--text);
+  font-size: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 3.2rem 0.875rem #8F155E;
+}
+
+.feedback-form {
+  height: 390px;
+  width: 849px;
+  margin: 20.0625rem 0 10.125rem 0;
+  background-color: rgba(40, 18, 31, 0.89);
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px;
+}
+
+.feedback-form h3 {
+    font-size: 24;
+    font-weight: 400;
+    margin: 43px 65px 2rem 65px;
+}
+
+
+.feedback-form input {
+    background-color: #46273A;
+    border: none;
+}
+
+.input-name {
+    margin: 0 65px 2rem 65px;
+    height: 37px;
+    position: relative;
+}
+
+.input-name input {
+    width: 100%;
+    height: 37px;
+    border-radius: 6px;
+}
+
+.input-comment {
+    margin: 0 65px 2rem 65px;
+    border-radius: 6px;
+    height: 103px;
+    position: relative;
+}
+
+.input-comment input {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.submit-container {
+    display: flex;
+    justify-content: flex-end;
+    height: 2rem;
+    margin: 0 65px 43px 65px;
+}
+
+.placeholder {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    color: #565656;
+}
+
+.feedback-form button {
+    width: 33%;
+    background-color: var(--secondary-button);
+    color: var(--text);
+    text-align: center;
+    border-radius: 6px;
+}
+
+.nav-logo:hover,
+.nav-name:hover,
+.book:hover,
+.submit-button:hover {
+    cursor: pointer;
 }
