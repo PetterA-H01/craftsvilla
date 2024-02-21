@@ -271,6 +271,8 @@ nav {
     width: 100%;
     height: 37px;
     border-radius: 6px;
+    padding-left: 20px;
+    color: var(--text);
 }
 
 .input-comment {
@@ -278,12 +280,19 @@ nav {
     border-radius: 6px;
     height: 103px;
     position: relative;
+    color: var(--text);
 }
 
-.input-comment input {
+.input-comment textarea {
     width: 100%;
     height: 100%;
     border-radius: 6px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: auto;
+    color: var(--text);
+    text-align: left;
+    background-color: #46273A;
 }
 
 .submit-container {
@@ -299,6 +308,19 @@ nav {
     top: 8px;
     color: #565656;
 }
+
+textarea {
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+}
+
 
 .feedback-form button {
     width: 33%;

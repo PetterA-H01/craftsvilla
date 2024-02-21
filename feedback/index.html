@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <meta name='twitter:card' content='Craftsvilla' />
+  <meta name='twitter:title' content='Craftsvilla - Feedback' />
+  <meta name='twitter:description' content='Example Webpage Description' />
+  <meta name='twitter:image' content='/path_to_your_preview_image.png' />
+  <meta name='twitter:image:alt' content='alt text of your image' />
+
+
   <title>Craftsvilla - Feedback</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,18 +67,19 @@
         <div class="feedback-form">
                 <h3>Feedback</h3>
                 <div class="input-name">
-                    <input type="text"/>
-                    <span class="placeholder">Name</span>
+                    <input id="name-input" type="text"/>
+                    <span id="name-placeholder" class="placeholder">Name</span>
                 </div>
                 <div class="input-comment">
-                    <input class="comment" type="text"/>
-                    <span class="placeholder">Comment</span>
+                    <textarea id="comment-input" class="comment" type="text"></textarea>
+                    <span id="comment-placeholder" class="placeholder">Comment</span>
                 </div>
                 <div class="submit-container">
                     <button class="submit-button">Submit</button>
                 </div>
         </div>
     </main>
+    <script src="./script.js" defer />
 </body>
 
 </html>
