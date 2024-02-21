@@ -123,10 +123,17 @@ nav {
   margin-top: 1.0625rem;
 }
 
+.branding {
+  display: flex;
+  align-items: center;
+}
+
 .nav-name {
   font-size: 24px;
   margin-left: 2rem;
   font-weight: 600;
+  height: 40px;
+  text-align: center;
 }
 
 .nav-links {
@@ -250,89 +257,205 @@ nav {
 }
 
 .feedback-form h3 {
-    font-size: 24;
-    font-weight: 400;
-    margin: 43px 65px 2rem 65px;
+  font-size: 24;
+  font-weight: 400;
+  margin: 43px 65px 2rem 65px;
 }
 
 
 .feedback-form input {
-    background-color: #46273A;
-    border: none;
+  background-color: #46273A;
+  border: none;
 }
 
 .input-name {
-    margin: 0 65px 2rem 65px;
-    height: 37px;
-    position: relative;
+  margin: 0 65px 2rem 65px;
+  height: 37px;
+  position: relative;
 }
 
 .input-name input {
-    width: 100%;
-    height: 37px;
-    border-radius: 6px;
-    padding-left: 20px;
-    color: var(--text);
+  width: 100%;
+  height: 37px;
+  border-radius: 6px;
+  padding-left: 20px;
+  color: var(--text);
 }
 
 .input-comment {
-    margin: 0 65px 2rem 65px;
-    border-radius: 6px;
-    height: 103px;
-    position: relative;
-    color: var(--text);
+  margin: 0 65px 2rem 65px;
+  border-radius: 6px;
+  height: 103px;
+  position: relative;
+  color: var(--text);
 }
 
 .input-comment textarea {
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-    padding-left: 20px;
-    padding-top: 8px;
-    padding-bottom: auto;
-    color: var(--text);
-    text-align: left;
-    background-color: #46273A;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: auto;
+  color: var(--text);
+  text-align: left;
+  background-color: #46273A;
 }
 
 .submit-container {
-    display: flex;
-    justify-content: flex-end;
-    height: 2rem;
-    margin: 0 65px 43px 65px;
+  display: flex;
+  justify-content: flex-end;
+  height: 2rem;
+  margin: 0 65px 43px 65px;
 }
 
 .placeholder {
-    position: absolute;
-    left: 20px;
-    top: 8px;
-    color: #565656;
+  position: absolute;
+  left: 20px;
+  top: 8px;
+  color: #565656;
 }
 
 textarea {
-    border: none;
-    overflow: auto;
-    outline: none;
+  border: none;
+  overflow: auto;
+  outline: none;
 
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 
-    resize: none; /*remove the resize handle on the bottom right*/
+  resize: none;
+  /*remove the resize handle on the bottom right*/
 }
 
 
 .feedback-form button {
-    width: 33%;
-    background-color: var(--secondary-button);
-    color: var(--text);
-    text-align: center;
-    border-radius: 6px;
+  width: 33%;
+  background-color: var(--secondary-button);
+  color: var(--text);
+  text-align: center;
+  border-radius: 6px;
 }
 
 .nav-logo:hover,
 .nav-name:hover,
 .book:hover,
 .submit-button:hover {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+
+    padding: 0 2rem 0 2rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .branding {
+    margin-bottom: 20px;
+  }
+
+  .nav-links {
+    margin: 0;
+  }
+
+  .nav-name {
+    margin-left: 12px;
+  }
+
+  .heading {
+    margin: 46px 0 19px 0;
+    font-size: 20px;
+    padding: 0;
+    margin-right: 4rem;
+    text-align: center;
+  }
+
+
+  .cards {
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    width: 144px;
+    height: 144px;
+    padding: 9px 11px 7px 17px;
+  }
+
+  .card-xl {
+    width: 311px;
+    padding: 9px 11px 9px 17px;
+    grid-row: 3;
+  }
+
+  .card h4,
+  .card-xl h4 {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  .card p,
+  .card-xl p {
+    height: 65px;
+    width: 116px;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+
+  .card-xl p {
+    width: 285px;
+  }
+
+  .card h5,
+  .card-xl h5 {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .book {
+    margin-top: 63px;
+    width: 244px;
+    height: 73px;
+    font-size: 32px;
+  }
+
+  .feedback-form {
+    width: 311px;
+    height: 348px;
+    margin: 123px 0 8rem 0;
+  }
+
+
+  .feedback-form h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 35.5px 24px 2rem 24px;
+  }
+
+  .input-name {
+    margin: 0 24px 35.5px 24px;
+  }
+
+
+  .input-comment {
+    margin: 0 24px 35.5px 24px;
+  }
+
+  .submit-container {
+    margin: 0 24px 43px 24px;
+  }
+
+  .feedback-form button {
+    width: 100%;
+  }
+
 }
