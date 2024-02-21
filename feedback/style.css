@@ -362,7 +362,7 @@ textarea {
   }
 
   .branding {
-      margin: 0 auto 20px 32px;
+      margin: 0 auto 20px 0;
   }
 
   .nav-links {
@@ -377,7 +377,6 @@ textarea {
       background-color: var(--secondary-button);
       border-radius: 8px;
       width: 100%;
-      margin: 0 8px 0 8px;
       text-align: center;
   }
 
