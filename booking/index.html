@@ -5,11 +5,166 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Craftsvilla - {}</title>
+
+  <meta name='twitter:card' content='Craftsvilla' />
+  <meta name='twitter:title' content='Craftsvilla - Booking' />
+
+
+  <title>Craftsvilla - Booking</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <main>
+    <nav>
+      <a href="/" class="branding">
+        <img class="nav-logo" alt="Craftsvilla Logo" src="../static/temp-logo.svg" />
+        <h2 class="nav-name">CRAFTSVILLA</h2>
+      </a>
+      <div class="nav-links">
+        <a class="gallery" href="/gallery">Gallery</a>
+        <a class="feedback" href="/feedback">Feedback</a>
+        <a class="booking" href="/booking">Booking</a>
+      </div>
+    </nav>
+    <h1 class="heading">Book your session </h1>
+    <div class="book-form">
+      <div class="book-form-left">
+        <div class="input-name">
+          <input id="name-input" class="name" type="text" />
+          <span id="name-placeholder" class="placeholder">Name</span>
+        </div>
+        <div class="input-artform">
+          <select id="artform-input" class="artform">
+            <option value=""></option>
+            <option value="Watercolor">Watercolor</option>
+            <option value="Canvas">Canvas</option>
+            <option value="Mosaic">Mosaic</option>
+          </select>
+          <span id="artform-placeholder" class="placeholder">Artform</span>
+          <svg class="arrow-left" width="31" height="21" viewBox="0 0 31 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.70282 0L0 5.70282L15.2075 20.9103L30.415 5.70282L24.7122 0L15.2075 9.5047L5.70282 0Z" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="input-amount">
+          <select id="amount-input" class="amount" type="text">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+          <span id="amount-placeholder" class="placeholder">Amount</span>
+          <svg class="arrow-left" width="31" height="21" viewBox="0 0 31 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.70282 0L0 5.70282L15.2075 20.9103L30.415 5.70282L24.7122 0L15.2075 9.5047L5.70282 0Z" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="input-details">
+          <textarea id="details-input" class="details" type="text"></textarea>
+          <span id="details-placeholder" class="placeholder">Extra Details</span>
+        </div>
+      </div>
+      <div class="book-form-right">
+        <div class="calendar-container">
+          <div class="calendar">
+            <div class="month-year">
+              <div class="month">
+                <h4>February</h4>
+                <svg class="arrow-calendar" width="31" height="21" viewBox="0 0 31 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.70282 0L0 5.70282L15.2075 20.9103L30.415 5.70282L24.7122 0L15.2075 9.5047L5.70282 0Z" fill="currentColor" />
+                </svg>
+              </div>
+              <div class="year">
+                <h4>2021</h4>
+                <svg class="arrow-calendar" width="31" height="21" viewBox="0 0 31 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.70282 0L0 5.70282L15.2075 20.9103L30.415 5.70282L24.7122 0L15.2075 9.5047L5.70282 0Z" fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+            <div class="calendar-days">
+              <div class="col">
+                <p class="day">Mon</p>
+                <p class="unavailable">1</p>
+                <p>8</p>
+                <p>15</p>
+                <p>22</p>
+              </div>
+              <div class="col">
+                <p class="day">Tue</p>
+                <p>2</p>
+                <p class="unavailable">9</p>
+                <p>16</p>
+                <p class="unavailable">23</p>
+              </div>
+              <div class="col">
+                <p class="day">Wed</p>
+                <p>3</p>
+                <p>10</p>
+                <p>17</p>
+                <p>24</p>
+              </div>
+              <div class="col">
+                <p class="day">Thu</p>
+                <p>4</p>
+                <p class="unavailable">11</p>
+                <p>18</p>
+                <p>25</p>
+              </div>
+              <div class="col">
+                <p class="day">Fri</p>
+                <p>5</p>
+                <p>12</p>
+                <p>19</p>
+                <p>26</p>
+              </div>
+              <div class="col">
+                <p class="day">Sat</p>
+                <p>6</p>
+                <p>13</p>
+                <p>20</p>
+                <p class="unavailable">27</p>
+              </div>
+              <div class="col">
+                <p class="day">Fri</p>
+                <p>7</p>
+                <p class="unavailable">14</p>
+                <p class="unavailable">21</p>
+                <p class="unavailable">28</p>
+              </div>
+            </div>
+          </div>
+          <p class="availability">Grayed out days are unavailable.</p>
+        </div>
+        <div class="book-button-container">
+          <div class="book-button">Book now</div>
+        </div>
+      </div>
+    </div>
+    <h4 class="already-booked">Already booked? <span>Log in</span></h4>
+    <h3 class="faq-heading">Frequently asked questions</h3>
+    <div class="faq-container">
+      <div class="faq-item first-faq-item">
+          <h3 id="faq-1">Where are we located?</h3>
+        <svg id="faq-1-arrow" class="arrow-faq" width="31" height="21" viewBox="0 0 31 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.70282 0L0 5.70282L15.2075 20.9103L30.415 5.70282L24.7122 0L15.2075 9.5047L5.70282 0Z" fill="currentColor" />
+        </svg>
+        <p id="faq-1-p">Our address is: <a href="https://maps.google.com/?q=Tattoo+Shop+-+Jimmy's+Parlour/">New Delhi Rd no4 3/007, New Delhi Rd 1000, Skopje, North Macedonia</a></p>
+      </div>
+      <div id="faq-2" class="faq-item">
+        <h3>How do I cancel a booking?</h3>
+        <svg id="faq-2-arrow" class="arrow-faq" width="31" height="21" viewBox="0 0 31 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.70282 0L0 5.70282L15.2075 20.9103L30.415 5.70282L24.7122 0L15.2075 9.5047L5.70282 0Z" fill="currentColor" />
+        </svg>
+        <p id="faq-2-p">You don't lol. We don't exist.</p>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
 </body>
 
 </html>
