@@ -267,11 +267,6 @@ nav {
   cursor: pointer;
 }
 
-.artform:after {
-  color: red;
-  background-color: red;
-}
-
 .input-name {
   margin-top: 65px;
   margin-bottom: 41px;
@@ -528,4 +523,234 @@ select {
   top: 23.54px;
   right: 17px;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        /* overflow-x: hidden; */
+        width: 100vw;
+    }
+    main {
+        padding: 0 2rem 0 2rem;
+        height: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        width: 311px;
+    }
+
+    .branding {
+        margin: 0 auto 20px 0;
+    }
+
+    .nav-links {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .nav-links a {
+        background-color: var(--secondary-button);
+        border-radius: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-name {
+        margin-left: 12px;
+    }
+
+    .heading {
+        margin: 32px 0 24px 0;
+        font-size: 20px;
+        padding: 0;
+        margin-right: 4rem;
+        text-align: center;
+        width: unset;
+    }
+
+    .book-form {
+        width: unset;
+        background-color: unset;
+        flex-direction: column;
+    }
+
+
+.book-form-left {
+  margin-right: unset;
+  margin-left: unset;
+}
+
+    .input-name,
+    .input-artform,
+    .input-amount {
+        width: 311px;
+        height: 54px;
+        font-size: 13px;
+    }
+
+    .input-details {
+        width: 311px;
+        height: 96px;
+        font-size: 13px;
+        margin-bottom: 32px;
+}
+
+.input-name {
+  margin-top: unset;
+  margin-bottom: 24px;
+}
+
+.input-amount {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.arrow-left {
+  right: 8px;
+  top: 20px;
+  width: 19px;
+  height: 15.96px;
+}
+
+.book-form-right {
+  margin: unset;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+  width: 311px;
+  height: 288px;
+}
+
+
+.month {
+    width: 125px;
+    height: 53px;
+    border-radius: 24px;
+    margin-right: 32px;
+}
+
+.month h4 {
+    font-size: 14px;
+}
+
+.year {
+    width: 91px;
+    height: 53px;
+}
+
+.year h4 {
+    font-size: 14px;
+}
+
+.arrow-calendar {
+    width: 13px;
+    height: 8.94px;
+}
+
+.month-year {
+    padding-top: 10.5px;
+}
+
+.calendar-days {
+    width: 234px;
+    height: 222px;
+    padding-top: 7px;
+}
+
+.col {
+    width: 31px;
+    height: 222px;
+    gap: 24px;
+    padding: unset;
+    user-select: none;
+}
+
+
+.col p:not(.day) {
+    font-size: 13px;
+}
+
+.day {
+    font-size: 13px;
+}
+
+.book-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-button {
+  margin: 32px 0 0 0;
+  width: 238px;
+  height: 64px;
+  font-size: 24px;
+}
+
+.already-booked {
+  font-size: 16px;
+  margin: 32px 0 56px 0;
+}
+
+.faq-heading {
+  margin: 0 0 29px 0;
+  font-size: 16px;
+}
+
+.faq-container {
+  width: 311px;
+  min-height: 112px;
+  background-color: unset;
+  border-radius: 16px;
+  padding: unset;
+  margin-bottom: 80px;
+}
+
+.first-faq-item {
+  margin-bottom: 32px;
+}
+
+.faq-item {
+  width: 100%;
+  min-height: 40px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.faq-item h3 {
+  height: 40px;
+  width: unset;
+}
+
+.faq-item p {
+  font-size: 12px;
+  background-color: #461e2d;
+  padding: 8px 0 0 32px;
+}
+
+.arrow-faq {
+  top: 12.44px;
+  right: 31px;
+  height: 15.13px;
+  width: 22px;
+}
 }
